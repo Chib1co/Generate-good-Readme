@@ -33,59 +33,12 @@ inquirer
 },
 {
     type: 'input',
-    message: 'What is the name of your Github repo?',
-    name: 'repo',
-    validate: function (answer) {
-        if (answer.length < 1) {
-            return console.log("A valid GitHub repois required.");
-        }
-        return true;
-  },
-},
-{
-    type: 'input',
     message: "What is the title of your project?",
     name: 'title',
     default: 'Project Title',
     validate: function (answer) {
         if (answer.length < 1) {
             return console.log("A valid project title is required.");
-        }
-        return true;
-    }
-},
-{
-    type: 'input',
-    message: "Write a description of your project.",
-    name: 'description',
-    default: 'Project Description',
-    validate: function (answer) {
-        if (answer.length < 1) {
-            return console.log("A valid project description is required.");
-        }
-        return true;
-    }
-},
-{
-    type: 'input',
-    message: "Write a description of your project.",
-    name: 'description',
-    default: 'Project Description',
-    validate: function (answer) {
-        if (answer.length < 1) {
-            return console.log("A valid project description is required.");
-        }
-        return true;
-    }
-},
-{
-    type: 'input',
-    message: "Write a description of your project.",
-    name: 'description',
-    default: 'Project Description',
-    validate: function (answer) {
-        if (answer.length < 1) {
-            return console.log("A valid project description is required.");
         }
         return true;
     }
@@ -134,7 +87,16 @@ inquirer
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+          return console.log(err);
+        }
+      
+        console.log("Success! Your README.md file has been generated")
+    });
+
+};
 
 // TODO: Create a function to initialize app
 function init() {}
