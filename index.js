@@ -3,10 +3,13 @@ const inquirer = require('inquirer');
 const fs = require("fs");
 
 //internal module
-const markdown = require("generateMarkdown.js")
+const markdown = require("./generateMarkdown.js")
 
 // TODO: Create an array of questions for user input
-const questions = [   {
+// const questions 
+inquirer
+.prompt([   
+{
     type: 'input',
     message: 'What is your Github user name?',
     name: 'username',
@@ -126,7 +129,8 @@ const questions = [   {
     name: 'license'
 }
 
-];
+]);
+
 
 
 // TODO: Create a function to write README file
