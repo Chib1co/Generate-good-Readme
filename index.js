@@ -70,8 +70,14 @@ inquirer
 {
     type: "input",
     message: "What is the path for this project's screenshot?",
-    default: "assets/img/screenshot.gif",
+    default: "image/screenshot.png",
     name: "projectImgSRC",
+},
+{
+    type: "input",
+    message: "What is your demo of this project?",
+    default: "image/demo.mov",
+    name: "projectDemoSRC",
 },
 {
     type: "input",

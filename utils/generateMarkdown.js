@@ -13,7 +13,7 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown({userName, userEmail, userRepo, title, description, projectImgSRC, projectInstall, projectRun, projectTest, projectInfo, projectLicense, avatarURL}) {
+function generateMarkdown({userName, userEmail, userRepo, title, description, projectImgSRC, projectDemoSRC, projectInstall, projectRun, projectTest, projectInfo, projectLicense, avatarURL}) {
   projectTitleDashed = title.replace(/\s+/g, '-');
   return `[contributors-shield]: https://img.shields.io/github/contributors/${userName}/${projectTitleDashed}.svg?style=flat-square
   [contributors-url]: https://github.com/${userName}/${projectTitleDashed}/graphs/contributors
@@ -44,23 +44,21 @@ function generateMarkdown({userName, userEmail, userRepo, title, description, pr
   - [Questions and Feedback](#questions-and-feedback)
   ## Screenshots
   <img src="${projectImgSRC}" alt="${title}"/>
-  ## Installation
+  - Installation
   Download (and unpack) or clone the repo, then using a CLI run the ${projectInstall} command.
-  ## Usage
+  - Usage
   Run the application with the CLI command ${projectRun} and follow the prompts.
-  ## Testing
+  - Testing
   Run the tests with the CLI command ${projectTest}.
-  ## Additional Information
+  - Additional Information
   ${projectInfo}
-  ## License
-  This project is licensed under the ${projectLicense} License - see the [LICENSE.txt](https://github.com/${userName}/${projectTitleDashed}/blob/master/LICENSE.txt) file for details
-  ## Contributing
-  Please read [CONTRIBUTING.md](https://github.com/${userName}/${projectTitleDashed}/blob/master/CONTRIBUTING.md) for details on the code of conduct, and the process for submitting pull requests.
+  ## Demo recording
+  <img src="${projectDemoSRC}" alt="${title}"/>
+  
   ## Questions and Feedback
   Please contact me using one of the following:
-  |---|---|
+ 
   - | Github: [${userName}](https://gist.github.com/${userName}) | [<img src="${avatarURL}" height="30" width="30" alt="${userName}"/>](https://gist.github.com/${userName}) |
-  |---|---|
   - Email: ${userEmail}`
 }
 
