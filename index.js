@@ -76,7 +76,7 @@ inquirer
 {
     type: "input",
     message: "What is your demo of this project?",
-    default: "image/demo.mov",
+    default: "image/demo2.mov",
     name: "projectDemoSRC",
 },
 {
