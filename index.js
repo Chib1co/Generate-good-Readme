@@ -3,7 +3,7 @@ const inquirer = require('inquirer');
 const fs = require("fs");
 
 //internal module
-const markdown = require("./generateMarkdown.js")
+const markdown = require("./utils/generateMarkdown.js")
 
 // TODO: Create an array of questions for user input
 // const questions 
@@ -12,7 +12,7 @@ inquirer
 {
     type: 'input',
     message: 'What is your Github user name?',
-    name: 'username',
+    name: 'userName',
     validate: function (answer) {
         if (answer.length < 1) {
             return console.log("A valid GitHub username is required.");
@@ -21,9 +21,20 @@ inquirer
     }
   },
   {
+    type: "input",
+    message: "What is your email address?",
+    name: "userEmail",
+    validate: function (answer) {
+        if (answer.length < 1) {
+            return console.log("A valid GitHub username is required.");
+        }
+        return true;
+    } 
+    },
+  {
     type: 'input',
     message: 'What is the name of your Github repo?',
-    name: 'repo',
+    name: 'userRepo',
     validate: function (answer) {
         if (answer.length < 1) {
             return console.log("A valid GitHub repois required.");
@@ -56,33 +67,55 @@ inquirer
     }
 },
 {
-    type: 'input',
-    message: "If applicable, describe the steps required to install your project for the Installation section.",
-    name: 'installation'
+    type: "input",
+    message: "What is the path for this project's screenshot?",
+    default: "assets/img/screenshot.gif",
+    name: "projectImgSRC",
 },
 {
-    type: 'input',
-    message: "Provide instructions and examples of your project in use for the Usage section.",
-    name: 'usage'
+    type: "input",
+    message: "What command should be run to install dependencies?",
+    default: "`npm install`",
+    name: "projectInstall",
 },
 {
-    type: 'input',
-    message: "If applicable, provide guidelines on how other developers can contribute to your project.",
-    name: 'contributing'
+    type: "input",
+    message: "What command should be run to run the program?",
+    default: "`node index.js`",
+    name: "projectRun",
 },
 {
-    type: 'input',
-    message: "If applicable, provide any tests written for your application and provide examples on how to run them.",
-    name: 'tests'
+    type: "input",
+    message: "What command should be run to start tests?",
+    default: "`npm test`",
+    name: "projectTest",
 },
 {
-    type: 'list',
-    message: "Choose a license for your project.",
-    choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
-    name: 'license'
+    type: "input",
+    message: "Any additional information about the project?",
+    name: "projectInfo",
+},
+{
+    type: "input",
+    message: "Please input an appropriate license type for this project",
+    default: "MIT",
+    name: "projectLicense",
 }
 
-]);
+])
+.then((inquirerResponses) => {
+    getUser(inquirerResponses.userName)
+        .then((githubResponse) => {
+            // Add user avatar to project details
+            inquirerResponses.avatarURL = githubResponse.data.avatar_url
+            // Parse the README details to create markdown version
+            let markdownReadme = generateMarkdown(inquirerResponses);
+            // Parse the markdown README version to write it to file
+            writeToFile('README.md', markdownReadme);
+        })
+})
+
+
 
 
 
