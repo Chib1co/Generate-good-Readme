@@ -1,16 +1,15 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  // ![Badge for GitHub repo top language](`https://img.shields.io/github/languages/top/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor) ![Badge for GitHub last commit](https://img.shields.io/github/last-commit/${userResponses.username}/${userResponses.repo}?style=flat&logo=appveyor`)
-}
+// function renderLicenseBadge(license) {
+// }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+// function renderLicenseLink(license) {}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+// function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown({userName, userEmail, userRepo, title, description, projectImgSRC, projectDemoSRC, projectInstall, projectRun, projectTest, projectInfo, projectLicense, avatarURL}) {
@@ -53,8 +52,8 @@ function generateMarkdown({userName, userEmail, userRepo, title, description, pr
   - Additional Information
   ${projectInfo}
   ## Demo recording
-  <img src="${projectDemoSRC}" alt="${title}"/>
-  
+  <a href="https://drive.google.com/file/d/1XEXy4Ng1VfIOXcNfB-skRxPeq5K7h9mI/view?usp=sharing" target="_blank" alt="${title}"/>
+
   ## Questions and Feedback
   Please contact me using one of the following:
  

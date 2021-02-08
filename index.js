@@ -76,7 +76,7 @@ inquirer
 {
     type: "input",
     message: "What is your demo of this project?",
-    default: "image/demo2.mov",
+    default: "https://drive.google.com/file/d/1XEXy4Ng1VfIOXcNfB-skRxPeq5K7h9mI/view?usp=sharing",
     name: "projectDemoSRC",
 },
 {

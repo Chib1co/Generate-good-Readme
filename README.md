@@ -1,18 +1,18 @@
-[contributors-shield]: https://img.shields.io/github/contributors/Chib1co/Using-node.js-to-generate-readme-file.svg?style=flat-square
-  [contributors-url]: https://github.com/Chib1co/Using-node.js-to-generate-readme-file/graphs/contributors
-  [forks-shield]: https://img.shields.io/github/forks/Chib1co/Using-node.js-to-generate-readme-file.svg?style=flat-square
-  [forks-url]: https://github.com/Chib1co/Using-node.js-to-generate-readme-file/network/members
-  [stars-shield]: https://img.shields.io/github/stars/Chib1co/Using-node.js-to-generate-readme-file.svg?style=flat-square
-  [stars-url]: https://github.com/Chib1co/Using-node.js-to-generate-readme-file/stargazers
-  [issues-shield]: https://img.shields.io/github/issues/Chib1co/Using-node.js-to-generate-readme-file.svg?style=flat-square
-  [issues-url]: https://github.com/Chib1co/Using-node.js-to-generate-readme-file/issues
-  [license-shield]: https://img.shields.io/github/license/Chib1co/Using-node.js-to-generate-readme-file.svg?style=flat-square
-  [license-url]: https://github.com/Chib1co/Using-node.js-to-generate-readme-file/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Chib1co/Readme-generater-using-node.js.svg?style=flat-square
+  [contributors-url]: https://github.com/Chib1co/Readme-generater-using-node.js/graphs/contributors
+  [forks-shield]: https://img.shields.io/github/forks/Chib1co/Readme-generater-using-node.js.svg?style=flat-square
+  [forks-url]: https://github.com/Chib1co/Readme-generater-using-node.js/network/members
+  [stars-shield]: https://img.shields.io/github/stars/Chib1co/Readme-generater-using-node.js.svg?style=flat-square
+  [stars-url]: https://github.com/Chib1co/Readme-generater-using-node.js/stargazers
+  [issues-shield]: https://img.shields.io/github/issues/Chib1co/Readme-generater-using-node.js.svg?style=flat-square
+  [issues-url]: https://github.com/Chib1co/Readme-generater-using-node.js/issues
+  [license-shield]: https://img.shields.io/github/license/Chib1co/Readme-generater-using-node.js.svg?style=flat-square
+  [license-url]: https://github.com/Chib1co/Readme-generater-using-node.js/blob/master/LICENSE.txt
   [![Contributors][contributors-shield]][contributors-url] [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url] [![License.txt][license-shield]][license-url]
   # Title 
-  Using node.js to generate readme file
+  Readme generater using node.js
   ## Description
-  Good readme is very important for your project. Using node.js to create easy writing yet organzed Read me file
+  good readme is very important for showing your github repo. Using node.js to make easy yet very organized Readme
   ## Table of Contents
   - [Title](#title)
   - [Description](#description)
@@ -26,7 +26,7 @@
   - [Contributing](#contributing)
   - [Questions and Feedback](#questions-and-feedback)
   ## Screenshots
-  <img src="image/screenshot.png" alt="Using node.js to generate readme file"/>
+  <img src="image/screenshot.png" alt="Readme generater using node.js"/>
   - Installation
   Download (and unpack) or clone the repo, then using a CLI run the `npm install` command.
   - Usage
@@ -36,8 +36,8 @@
   - Additional Information
   
   ## Demo recording
-  <img src="image/demo2.mov" alt="Using node.js to generate readme file"/>
-  
+  <a href="https://drive.google.com/file/d/1XEXy4Ng1VfIOXcNfB-skRxPeq5K7h9mI/view?usp=sharing" target="_blank" alt="Readme generater using node.js"/>
+
   ## Questions and Feedback
   Please contact me using one of the following:
  
