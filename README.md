@@ -1,18 +1,18 @@
-[contributors-shield]: https://img.shields.io/github/contributors/Chib1co/Readme-generater-using-node.js.svg?style=flat-square
-  [contributors-url]: https://github.com/Chib1co/Readme-generater-using-node.js/graphs/contributors
-  [forks-shield]: https://img.shields.io/github/forks/Chib1co/Readme-generater-using-node.js.svg?style=flat-square
-  [forks-url]: https://github.com/Chib1co/Readme-generater-using-node.js/network/members
-  [stars-shield]: https://img.shields.io/github/stars/Chib1co/Readme-generater-using-node.js.svg?style=flat-square
-  [stars-url]: https://github.com/Chib1co/Readme-generater-using-node.js/stargazers
-  [issues-shield]: https://img.shields.io/github/issues/Chib1co/Readme-generater-using-node.js.svg?style=flat-square
-  [issues-url]: https://github.com/Chib1co/Readme-generater-using-node.js/issues
-  [license-shield]: https://img.shields.io/github/license/Chib1co/Readme-generater-using-node.js.svg?style=flat-square
-  [license-url]: https://github.com/Chib1co/Readme-generater-using-node.js/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Chib1co/Using-node.js-to-generate-good-Readme.svg?style=flat-square
+  [contributors-url]: https://github.com/Chib1co/Using-node.js-to-generate-good-Readme/graphs/contributors
+  [forks-shield]: https://img.shields.io/github/forks/Chib1co/Using-node.js-to-generate-good-Readme.svg?style=flat-square
+  [forks-url]: https://github.com/Chib1co/Using-node.js-to-generate-good-Readme/network/members
+  [stars-shield]: https://img.shields.io/github/stars/Chib1co/Using-node.js-to-generate-good-Readme.svg?style=flat-square
+  [stars-url]: https://github.com/Chib1co/Using-node.js-to-generate-good-Readme/stargazers
+  [issues-shield]: https://img.shields.io/github/issues/Chib1co/Using-node.js-to-generate-good-Readme.svg?style=flat-square
+  [issues-url]: https://github.com/Chib1co/Using-node.js-to-generate-good-Readme/issues
+  [license-shield]: https://img.shields.io/github/license/Chib1co/Using-node.js-to-generate-good-Readme.svg?style=flat-square
+  [license-url]: https://github.com/Chib1co/Using-node.js-to-generate-good-Readme/blob/master/LICENSE.txt
   [![Contributors][contributors-shield]][contributors-url] [![Forks][forks-shield]][forks-url] [![Stargazers][stars-shield]][stars-url] [![Issues][issues-shield]][issues-url] [![License.txt][license-shield]][license-url]
   # Title 
-  Readme generater using node.js
+  Using node.js to generate good Readme
   ## Description
-  good readme is very important for showing your github repo. Using node.js to make easy yet very organized Readme
+  Good Reame is very important for showing our project on Github, Using Node.js to write easy yet very organized Readme
   ## Table of Contents
   - [Title](#title)
   - [Description](#description)
@@ -26,7 +26,7 @@
   - [Contributing](#contributing)
   - [Questions and Feedback](#questions-and-feedback)
   ## Screenshots
-  <img src="image/screenshot.png" alt="Readme generater using node.js"/>
+  <img src="image/screenshot.png" alt="Using node.js to generate good Readme"/>
   - Installation
   Download (and unpack) or clone the repo, then using a CLI run the `npm install` command.
   - Usage
@@ -36,7 +36,7 @@
   - Additional Information
   
   ## Demo recording
-  <a href="https://drive.google.com/file/d/1XEXy4Ng1VfIOXcNfB-skRxPeq5K7h9mI/view?usp=sharing" target="_blank" alt="Readme generater using node.js"/>
+  <a href="https://drive.google.com/file/d/1XEXy4Ng1VfIOXcNfB-skRxPeq5K7h9mI/view?usp=sharing" target="_blank" alt="Using node.js to generate good Readme"/>
 
   ## Questions and Feedback
   Please contact me using one of the following:

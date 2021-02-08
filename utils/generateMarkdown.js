@@ -52,8 +52,7 @@ function generateMarkdown({userName, userEmail, userRepo, title, description, pr
   - Additional Information
   ${projectInfo}
   ## Demo recording
-  <a href="https://drive.google.com/file/d/1XEXy4Ng1VfIOXcNfB-skRxPeq5K7h9mI/view?usp=sharing" target="_blank" alt="${title}"/>
-
+  <iframe src="https://drive.google.com/file/d/1qGwXnvPuoCmZz7hoje7sBDGXUse8agoT/preview" width="640" height="480"></iframe>
   ## Questions and Feedback
   Please contact me using one of the following:
  

@@ -76,7 +76,7 @@ inquirer
 {
     type: "input",
     message: "What is your demo of this project?",
-    default: "https://drive.google.com/file/d/1XEXy4Ng1VfIOXcNfB-skRxPeq5K7h9mI/view?usp=sharing",
+    default: `<iframe src="https://drive.google.com/file/d/1qGwXnvPuoCmZz7hoje7sBDGXUse8agoT/preview" width="640" height="480"></iframe>`,
     name: "projectDemoSRC",
 },
 {
