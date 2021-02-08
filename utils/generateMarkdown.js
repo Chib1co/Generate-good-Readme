@@ -34,12 +34,11 @@ function generateMarkdown({userName, userEmail, userRepo, title, description, pr
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Screenshots](#screenshots)
-  - [Installation](#installation)
+  - [Demo](#Demo video)
   - [Usage](#usage)
-  - [Testing](#testing)
+  
   - [Additional Information](#additional-information)
   - [License](#license)
-  - [Contributing](#contributing)
   - [Questions and Feedback](#questions-and-feedback)
   ## Screenshots
   <img src="${projectImgSRC}" alt="${title}"/>
