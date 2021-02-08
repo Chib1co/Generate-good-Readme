@@ -109,20 +109,20 @@ inquirer
 }
 
 ])
-.then((inquirerResponses) => {
+.then(init)  
+    // console.log(inquirerResponses);
+    // github.getUser(inquirerResponses.userName)
+    //     .then((githubResponse) => {
+    //         console.log(githubResponse)
+    //         // Add user avatar to project details
+    //         inquirerResponses.avatarURL = githubResponse.data.avatar_url
+    //         // Parse the README details to create markdown version
+    //         let markdownReadme = markdown(inquirerResponses);
+    //         // Parse the markdown README version to write it to file
+    //         fs.writeFileSync('output.md', markdownReadme);
+    //     })
 
-    console.log(inquirerResponses);
-    github.getUser(inquirerResponses.userName)
-        .then((githubResponse) => {
-            console.log(githubResponse)
-            // Add user avatar to project details
-            inquirerResponses.avatarURL = githubResponse.data.avatar_url
-            // Parse the README details to create markdown version
-            let markdownReadme = markdown(inquirerResponses);
-            // Parse the markdown README version to write it to file
-            fs.writeFileSync('output.md', markdownReadme);
-        })
-})
+
 
 // Create a README file from markdown README version
 function writeToFile(file, data) {
@@ -138,7 +138,19 @@ function writeToFile(file, data) {
 
 
 // TODO: Create a function to initialize app
-// function init() {}
+ function init(inquirerResponses) {
+
+    github.getUser(inquirerResponses.userName)
+        .then((githubResponse) => {
+            console.log(githubResponse)
+            // Add user avatar to project details
+            inquirerResponses.avatarURL = githubResponse.data.avatar_url
+            // Parse the README details to create markdown version
+            let markdownReadme = markdown(inquirerResponses);
+            // Parse the markdown README version to write it to file
+            fs.writeFileSync('output.md', markdownReadme);
+        })
+ }
 
 // Function call to initialize app
 // init();
