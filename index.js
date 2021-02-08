@@ -121,7 +121,7 @@ inquirer
             // Parse the README details to create markdown version
             let markdownReadme = markdown(inquirerResponses);
             // Parse the markdown README version to write it to file
-            fs.writeFileSync('README.md', markdownReadme);
+            fs.writeFileSync('output.md', markdownReadme);
         })
 })
 
@@ -139,7 +139,7 @@ function writeToFile(file, data) {
 
 
 // TODO: Create a function to initialize app
-function init() {}
+// function init() {}
 
 // Function call to initialize app
-init();
+// init();
