@@ -7,7 +7,6 @@ const markdown = require("./utils/generateMarkdown.js");
 const github = require("./utils/github.js");
 
 // TODO: Create an array of questions for user input
-// const questions 
 inquirer
 .prompt([   
 {
